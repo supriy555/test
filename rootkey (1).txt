@@ -1,0 +1,1 @@
+AWSAccessKeyId=AKIAQKWBCLP2ZASSVCBQAWSSecretKey=O+cY64qT83+2bA2r4cfGYFxsiDNnWCYa6quCAn7Lec2-user@ec2-18-136-106-174.ap-southeast-1.compute.amazonaws.comaws iam create-user --user-name aa2aws iam add-user-to-group --user-name raj --group-name devops

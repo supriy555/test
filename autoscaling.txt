@@ -1,0 +1,17 @@
+load balancer name- samplelb19
+security group- samplesg19
+launch configaration- samplelcg19
+amazon linux-- ami-033b95fb8079dc481
+keypair num-- samplekpn19
+
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "MyGoogle-2" > index.html
+service httpd start
+chkconfig httpd on
+
+Auto Scaling group name-- sampleas19
+provide a name tag-- sampletag19

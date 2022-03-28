@@ -1,0 +1,62 @@
+*launching ec2 using windows*
+dns-- ec2-54-227-215-146.compute-1.amazonaws.com
+user-- Administrator
+pasword-- 2AZIwxfDWigTubh3@acWu5njxfwL7PlW
+-------------------------
+1)*linux launch*
+security gn-- testfinal
+keypair-- linuxtest1
+instance id--- i-0940b7b97526463de
+file name-aara
+
+user---   ec2-user@ec2-52-23-198-3.compute-1.amazonaws.com
+cd /var /www/html
+
+2)*linux launch*
+security- gn-sg18
+keypair- kp18
+private newkp- pvkey18
+ user id - ec2-user@ec2-54-227-111-34.compute-1.amazonaws.com
+----------------------
+sudo su
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "MyGoogle-1" > index.html
+service httpd start
+chkconfig httpd on
+
+
+mylb dns name- http://mylb-157360140.us-east-1.elb.amazonaws.com/
+
+ec2-user@ec2-54-227-111-34.compute-1.amazonaws.com
+
+----------------
+*launch linex2*
+advanced detail----
+
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "MyGoogle-2" > index.html
+service httpd start
+chkconfig httpd on
+-=====================================
+*practice linux and lb*
+instant name- mission1-p
+security gn--sgp18
+key pair-- kp-p1
+ssh user-- ec2-user@ec2-52-91-205-195.compute-1.amazonaws.com
+
+load balancer- lb1-p
+
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "MyGoogle-1" > index.html
+service httpd start
+chkconfig httpd on
